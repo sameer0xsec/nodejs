@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Express Dynamic Routes</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Dynamic Routes: req.params 🎯</div>
+    <h1>Express Playground</h1>
+    <p>Routes can now take <strong>variables</strong> in the URL using the colon <code>:param</code> syntax!</p>
+
+    <pre>app.get('/api/users/:id', (req, res) => ...);</pre>
+
+    <ul class="nav-links">
+      <li>👉 <a href="/hello/Sameer">Dynamic Greeting: /hello/Sameer</a></li>
+      <li>👉 <a href="/api/users">Get All Users: /api/users</a></li>
+      <li>👉 <a href="/api/users/1">Get User #1: /api/users/1</a></li>
+      <li>👉 <a href="/api/users/2">Get User #2: /api/users/2</a></li>
+      <li>👉 <a href="/api/users/99">Get User #99 (Test 404): /api/users/99</a></li>
+      <li>👉 <a href="/test.html">Your new test page: test.html</a></li>
+    </ul>
+  </div>
+</body>
+</html>
